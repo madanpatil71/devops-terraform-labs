@@ -23,7 +23,7 @@ Applies the Terraform configuration to create, update, or delete infrastructure 
 4. terraform destroy
 Deletes all infrastructure resources defined in the Terraform configuration.
 
-Configuration & Validation Commands
+# Configuration & Validation Commands
 
 5. terraform validate
 Checks whether the Terraform configuration files are syntactically valid.
@@ -31,7 +31,7 @@ Checks whether the Terraform configuration files are syntactically valid.
 6. terraform fmt
 Formats Terraform configuration files according to standard style conventions.
 
-State & Output Commands
+# State & Output Commands
 
 7. terraform show
 Displays the current Terraform state or execution plan in a readable format.
@@ -45,7 +45,7 @@ Lists all resources tracked in the Terraform state file.
 10. terraform state show
 Displays detailed information about a specific resource in the Terraform state.
 
-Environment & Workspace Commands
+# Environment & Workspace Commands
 
 11. terraform workspace list
 Lists all available Terraform workspaces.
@@ -53,7 +53,7 @@ Lists all available Terraform workspaces.
 12. terraform workspace new
 Creates a new workspace for managing a separate infrastructure environment.
 
-The 3 Commands You Will Use the Most
+# The 3 Commands You Will Use the Most
 
 The typical workflow in Terraform is:
 
