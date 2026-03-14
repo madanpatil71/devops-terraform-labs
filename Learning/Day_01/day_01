@@ -1,4 +1,4 @@
-A] What is terraform?
+# What is terraform?
 Ans: Terraform is an open-source Infrastructure as Code tool used to provision and manage cloud infrastructure using declarative configuration files.
 
 Keywords: 
@@ -6,3 +6,57 @@ Open-source
 Infrastructure as Code
 Declarative
 Provision infrastructure
+
+## Mostly used commands in terraform.
+
+Core Terraform Commands
+
+1. terraform init
+Initializes the Terraform working directory by downloading required providers and setting up the backend.
+
+2. terraform plan
+Creates an execution plan showing what infrastructure changes Terraform will make.
+
+3. terraform apply
+Applies the Terraform configuration to create, update, or delete infrastructure resources.
+
+4. terraform destroy
+Deletes all infrastructure resources defined in the Terraform configuration.
+
+Configuration & Validation Commands
+
+5. terraform validate
+Checks whether the Terraform configuration files are syntactically valid.
+
+6. terraform fmt
+Formats Terraform configuration files according to standard style conventions.
+
+State & Output Commands
+
+7. terraform show
+Displays the current Terraform state or execution plan in a readable format.
+
+8. terraform output
+Displays the output variables defined in the Terraform configuration.
+
+9. terraform state list
+Lists all resources tracked in the Terraform state file.
+
+10. terraform state show
+Displays detailed information about a specific resource in the Terraform state.
+
+Environment & Workspace Commands
+
+11. terraform workspace list
+Lists all available Terraform workspaces.
+
+12. terraform workspace new
+Creates a new workspace for managing a separate infrastructure environment.
+
+The 3 Commands You Will Use the Most
+
+The typical workflow in Terraform is:
+
+terraform init → terraform plan → terraform apply
+
+This sequence initializes Terraform, previews infrastructure changes, and then applies them.
