@@ -2,6 +2,8 @@
 
 A well-structured, hands-on repository containing practical Terraform labs, reusable modules, and Infrastructure as Code (IaC) best practices for AWS.
 
+![Terraform Architecture](docs/images/terraform_dev_prod_architecture.jpg)
+
 ---
 
 ## 📂 Repository Structure
