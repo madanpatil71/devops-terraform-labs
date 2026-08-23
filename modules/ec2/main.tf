@@ -17,6 +17,8 @@ resource "aws_instance" "this" {
   key_name                    = var.key_name
   user_data                   = var.user_data
   iam_instance_profile        = var.iam_instance_profile
+  monitoring                  = var.monitoring
+  disable_api_termination     = var.disable_api_termination
 
   root_block_device {
     volume_size           = var.root_volume_size

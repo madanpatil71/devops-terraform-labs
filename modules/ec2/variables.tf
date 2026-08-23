@@ -75,6 +75,18 @@ variable "root_volume_encrypted" {
   default     = true
 }
 
+variable "monitoring" {
+  type        = bool
+  description = "Enable detailed CloudWatch monitoring (1-minute intervals)"
+  default     = false
+}
+
+variable "disable_api_termination" {
+  type        = bool
+  description = "Enable termination protection to prevent accidental deletion"
+  default     = false
+}
+
 variable "tags" {
   type        = map(string)
   description = "Additional tags to apply to all resources"

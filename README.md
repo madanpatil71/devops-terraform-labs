@@ -14,7 +14,11 @@ devops-terraform-labs/
 │   └── ec2/                             # Reusable EC2 instance module
 │       ├── main.tf                      # Resource definitions
 │       ├── variables.tf                 # Module input variables
-│       └── outputs.tf                   # Module output values
+│       ├── outputs.tf                   # Module output values
+│       └── versions.tf                  # Provider & Terraform version constraints
+├── environments/                        # Multi-environment infrastructure
+│   ├── dev/                             # Cost-optimized Development environment
+│   └── prod/                            # High-durability Production environment
 └── labs/                                # Topic-wise hands-on labs
     ├── 01-basics-first-ec2/             # AWS provider configuration & basic EC2
     ├── 02-variables-precedence/         # Variables, defaults, & tfvars precedence
@@ -26,15 +30,17 @@ devops-terraform-labs/
 
 ---
 
-## 🛠️ Lab Catalog
+## 🛠️ Environments & Labs Catalog
 
-| Lab | Directory | Description | Concepts Covered |
+| Type | Directory | Description | Key Focus |
 |---|---|---|---|
-| **01** | [`labs/01-basics-first-ec2`](labs/01-basics-first-ec2/) | Basic EC2 Provisioning | `aws` provider, `required_providers`, basic `aws_instance` |
-| **02** | [`labs/02-variables-precedence`](labs/02-variables-precedence/) | Variable Precedence | Input variables, default values, `terraform.tfvars` order |
-| **03** | [`labs/03-cross-referencing-attributes`](labs/03-cross-referencing-attributes/) | Attribute Cross-Referencing | Dynamic attributes, `aws_eip`, `aws_security_group`, implicit dependencies |
-| **04** | [`labs/04-registry-modules`](labs/04-registry-modules/) | Registry Modules | Consuming official modules from Terraform Registry |
-| **05** | [`labs/05-team-environments`](labs/05-team-environments/) | Team-Based Modules | Reusable custom modules (`modules/ec2`), team isolation |
+| **Environment** | [`environments/dev`](environments/dev/) | Development Environment | Cost optimization, `t3.micro`, auto-shutdown, basic monitoring |
+| **Environment** | [`environments/prod`](environments/prod/) | Production Environment | High performance `t3.large`, termination protection, detailed monitoring |
+| **Lab 01** | [`labs/01-basics-first-ec2`](labs/01-basics-first-ec2/) | Basic EC2 Provisioning | `aws` provider, `required_providers`, basic `aws_instance` |
+| **Lab 02** | [`labs/02-variables-precedence`](labs/02-variables-precedence/) | Variable Precedence | Input variables, default values, `terraform.tfvars` order |
+| **Lab 03** | [`labs/03-cross-referencing-attributes`](labs/03-cross-referencing-attributes/) | Attribute Cross-Referencing | Dynamic attributes, `aws_eip`, `aws_security_group`, implicit dependencies |
+| **Lab 04** | [`labs/04-registry-modules`](labs/04-registry-modules/) | Registry Modules | Consuming official modules from Terraform Registry |
+| **Lab 05** | [`labs/05-team-environments`](labs/05-team-environments/) | Team-Based Modules | Reusable custom modules (`modules/ec2`), team isolation |
 
 ---
 
